@@ -1,0 +1,37 @@
+{
+  "name": "nai-dang-services",
+  "version": "1.0.0",
+  "description": "NAI-DANG.COM - 27 AI Agents Service Platform",
+  "main": "web-server.mjs",
+  "type": "module",
+  "scripts": {
+    "start": "node web-server.mjs",
+    "dev": "node web-server.mjs",
+    "deploy": "wrangler deploy --env production",
+    "deploy-dev": "wrangler deploy --env development",
+    "tail": "wrangler tail --env production",
+    "preview": "wrangler preview --env production"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "ai",
+    "agents",
+    "cloudflare",
+    "workers",
+    "revenue",
+    "automation"
+  ],
+  "author": "NAI-DANG.COM",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "node-fetch": "^3.3.2"
+  }
+}
