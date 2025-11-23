@@ -5,6 +5,9 @@ import { Commander } from '../agents/Commander';
 import { WebScraperAgent } from '../agents/WebScraperAgent';
 import { ScoutAgent } from '../agents/ScoutAgent';
 import { DataAnalystAgent } from '../agents/DataAnalystAgent';
+import { MarketDataAgent } from '../agents/MarketDataAgent';
+import { FinanceAgent } from '../agents/FinanceAgent';
+import { CommunicationsAgent } from '../agents/CommunicationsAgent';
 import { BaseAgent } from './BaseAgent';
 import { MessageType, TaskPriority } from '../types';
 
@@ -68,6 +71,15 @@ export class AgentOrchestrator {
 
     const dataAnalyst = new DataAnalystAgent();
     this.registerAgent(dataAnalyst);
+
+    const marketData = new MarketDataAgent();
+    this.registerAgent(marketData);
+
+    const finance = new FinanceAgent();
+    this.registerAgent(finance);
+
+    const communications = new CommunicationsAgent();
+    this.registerAgent(communications);
 
     console.log(`[Orchestrator] Initialized with ${this.agents.size} agents`);
   }
