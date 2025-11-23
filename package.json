@@ -24,7 +24,7 @@
     "cheerio": "^1.0.0-rc.12",
     "puppeteer": "^21.6.1",
     "openai": "^4.20.1",
-    "anthropic": "^0.9.1",
+    "@anthropic-ai/sdk": "^0.30.0",
     "sqlite3": "^5.1.6",
     "uuid": "^9.0.1",
     "express": "^4.18.2",
